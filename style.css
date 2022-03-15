@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;500&display=swap");
+
+html {
+  min-height: 100%;
+  width: 100%;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #350816;
+}
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(255%2c 144%2c 0%2c 1)'%3e%3c/rect%3e%3cpath d='M1984 1080L0 1080 L0 873.49Q-4.92 772.57%2c 96 767.64Q211.52 723.16%2c 256 838.69Q354.45 777.14%2c 416 875.59Q457.22 820.81%2c 512 862.02Q519.4 773.42%2c 608 780.83Q697.28 710.11%2c 768 799.39Q852.48 787.87%2c 864 872.35Q928.18 776.53%2c 1024 840.71Q1074.89 731.6%2c 1184 782.49Q1237.88 740.37%2c 1280 794.24Q1398.39 752.63%2c 1440 871.03Q1472.79 807.82%2c 1536 840.61Q1605.27 749.88%2c 1696 819.16Q1738.53 765.69%2c 1792 808.22Q1854.35 774.57%2c 1888 836.92Q1943.77 796.69%2c 1984 852.46z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M2048 1080L0 1080 L0 921.16Q49.56 810.72%2c 160 860.29Q253.78 794.07%2c 320 887.84Q391.1 862.94%2c 416 934.05Q449.72 871.77%2c 512 905.49Q565.26 798.75%2c 672 852.01Q771 791.01%2c 832 890.02Q904.25 802.27%2c 992 874.53Q1061.68 848.21%2c 1088 917.9Q1137.2 807.1%2c 1248 856.29Q1309.08 821.37%2c 1344 882.44Q1397.19 839.63%2c 1440 892.83Q1468.47 825.3%2c 1536 853.76Q1593.65 815.41%2c 1632 873.07Q1725.99 807.06%2c 1792 901.05Q1847.77 860.82%2c 1888 916.58Q1979.29 847.87%2c 2048 939.16z' fill='rgba(255%2c 166%2c 0%2c 1)'%3e%3c/path%3e%3cpath d='M1952 1080L0 1080 L0 982.45Q89.84 912.29%2c 160 1002.12Q189.18 935.3%2c 256 964.48Q348.16 896.64%2c 416 988.81Q475.21 888.02%2c 576 947.23Q661.26 872.5%2c 736 957.76Q798.09 923.85%2c 832 985.93Q855.91 913.84%2c 928 937.75Q1023.06 872.81%2c 1088 967.87Q1190.68 910.56%2c 1248 1013.24Q1298.12 903.36%2c 1408 953.47Q1474.74 924.21%2c 1504 990.95Q1604.48 931.43%2c 1664 1031.91Q1678.45 950.37%2c 1760 964.82Q1790.46 899.29%2c 1856 929.75Q1909.48 887.24%2c 1952 940.72z' fill='rgba(255%2c 127%2c 0%2c 1)'%3e%3c/path%3e%3cpath d='M1984 1080L0 1080 L0 1053.85Q97.72 991.57%2c 160 1089.29Q183.01 1016.3%2c 256 1039.3Q353.73 977.03%2c 416 1074.76Q430.21 992.97%2c 512 1007.18Q566.6 965.77%2c 608 1020.37Q715.98 968.35%2c 768 1076.32Q825.55 973.87%2c 928 1031.41Q963.5 970.91%2c 1024 1006.42Q1093.86 980.28%2c 1120 1050.14Q1219.13 989.27%2c 1280 1088.39Q1319.65 1032.05%2c 1376 1071.7Q1390.39 990.09%2c 1472 1004.48Q1528.39 964.87%2c 1568 1021.26Q1675.61 968.87%2c 1728 1076.47Q1756.27 1008.74%2c 1824 1037.01Q1887.71 940.72%2c 1984 1004.43z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  text-align: center;
+  background-size: cover;
+  background-clip: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.inputs {
+  margin: 30px 0;
+}
+
+main {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.weather {
+  font-size: 1em;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  grid-template-columns: 180px 180px 180px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "main main a b"
+    "main main c d"
+    "e e e e";
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.mainInfo {
+  margin: auto;
+  width: 200px;
+  height: auto;
+  background-color: rgba(244, 231, 215, 0.8);
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+  grid-area: main;
+}
+
+.weatherIcon img {
+  width: 70px;
+  margin-bottom: 0;
+}
+
+.temp {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+.minibox {
+  background-color: rgba(244, 231, 215, 0.8);
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 12px;
+  height: auto;
+  width: 80px;
+  padding: 50px 40px;
+  /* padding: 5% 4%; */
+  font-weight: 300;
+}
+
+.grid > .wind {
+  grid-area: a;
+}
+.grid > .clouds {
+  grid-area: b;
+}
+
+.grid > .sunrise {
+  grid-area: c;
+}
+.grid > .sunset {
+  grid-area: d;
+}
+
+#map {
+  margin: auto;
+  margin-top: 4%;
+  border-radius: 4px;
+  grid-area: e;
+  width: 500px;
+  height: 200px;
+}
+
+input:focus {
+  outline: solid orange;
+}
+
+button,
+input {
+  background-color: rgb(244, 231, 215);
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: 0;
+  color: #702f00;
+}
+
+button {
+  text-align: center;
+  transition: 200ms;
+  touch-action: manipulation;
+}
+
+button:hover {
+  outline: 0;
+  background: rgb(172, 94, 0);
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .weather {
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    font-size: 0.75em;
+  }
+  .minibox {
+    width: 50px;
+    padding: 30px 30px;
+  }
+}
